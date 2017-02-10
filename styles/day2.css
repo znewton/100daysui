@@ -18,7 +18,7 @@
     position: relative;
     display: inline-block;
     width: 600px;
-    margin: 5em auto;
+    margin: 3em auto;
     padding: 3em 0 0 3em;
     background-color: #fff;
     overflow: hidden;
@@ -30,6 +30,7 @@
 .modal-content, .modal-graphic {
     width: 49%;
     display: inline-block;
+    box-sizing: border-box;
     vertical-align: top;
 }
 
@@ -51,6 +52,43 @@
 .modal-graphic-price {
     font-size: 1.3em;
 }
+.modal-graphic-image {
+    width: 100%;
+}
+.modal-graphic-image > img {
+    width: 90%;
+    height: auto;
+}
+
+.modal-content {
+    padding: 0 25px;
+    font-size: 0.9em;
+}
+.modal-content > * {
+    margin-bottom: 1.5em;
+}
+
+.modal-item-description {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.modal-item-stock-status {
+    margin-bottom: 2em;
+}
+.modal-item-stock-status a {
+    text-decoration: none;
+    color: #323E8C;
+}
+.modal-item-rating {
+    margin-bottom: 3.5em;
+}
+.rating-indicator {
+    color: #888888;
+}
+.quantity-label {
+    text-transform: uppercase;
+}
 
 .modal-footer {
     border-top: 1px solid #bbbbbb;
@@ -58,6 +96,7 @@
     position: relative;
     box-sizing: border-box;
     width: 100%;
+    margin-top: 1em;
 }
 .modal-footer > * {
     position: relative;
@@ -70,9 +109,24 @@
     text-align: left;
 }
 .total-price {
-    color: #71BA1C;
+    color: #8FEB23;
     font-size: 1.8em;
 }
 .modal-footer-right {
     text-align: right;
+}
+
+#add-to-cart {
+    color: #8FEB23;
+    font-size: 1.9em;
+}
+
+
+.star::after {
+    content: '\2605';
+    color: #aaaaaa;
+    font-size: 1.5em;
+}
+.star.full::after {
+    color: #EBCE14;
 }
