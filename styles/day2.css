@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+
+.container {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffff00+19,fe0000+19,fe0000+19,fe0000+42,180070+42,180070+42,180070+61,007729+61,007729+81,bc004e+81 */
+    background: #6c2347; /* Old browsers */
+    background: -moz-linear-gradient(-60deg, #6c2347 19%, #51345f 19%, #51345f 19%, #51345f 42%, #355552 42%, #355552 42%, #355552 61%, #6d3341 61%, #6d3341 81%, #56565e 81%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-60deg, #6c2347 19%,#51345f 19%,#51345f 19%,#51345f 42%,#355552 42%,#355552 42%,#355552 61%,#6d3341 61%,#6d3341 81%,#56565e 81%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(-60deg, #6c2347 19%,#51345f 19%,#51345f 19%,#51345f 42%,#355552 42%,#355552 42%,#355552 61%,#6d3341 61%,#6d3341 81%,#56565e 81%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#bc004e',GradientType=0 ); /* IE6-9 */
+    /*background: -webkit-linear-gradient(to bottom right, #6c2347 20%, #51345f 20%, #355552 20%, #6d3341 20%, #56565e 20%);*/
+    /*background: linear-gradient(to bottom right, #6c2347 20%, #51345f 30%, #355552 20%, #6d3341 20%, #56565e );*/
+    height: 100%;
+}
+.modal {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    margin: 5em auto;
+    padding: 3em;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.3), -3px -3px 10px rgba(0,0,0,0.3);
+}

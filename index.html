@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#333333">
+    <title>100 Days</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link id="current-style" rel="stylesheet" href="styles/day0.css">
+    <script type="application/javascript" src="app.js"></script>
+</head>
+<body>
+<nav>
+    <div class="navbar-left">100 Days UI</div>
+    <div class="navbar-center">
+        <button id="reference-image-btn" onclick="refImgDisp(event,true)">Reference Image <span class="chevron"></span></button>
+    </div>
+    <div class="navbar-right">
+        <button onclick="incdecView(-1)"><</button>
+        <span>Day: <select id="view-select" title="Select Day" onchange="setView(parseInt(this.value))"></select></span>
+        <button onclick="incdecView(1)">></button>
+    </div>
+</nav>
+<div id="reference-image-wrapper" onclick="refImgDisp(event,false)">
+    <img id="reference-image" src="" />
+</div>
+<main>
+    <section id="view"></section>
+</main>
+
+</body>
+</html>

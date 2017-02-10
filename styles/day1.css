@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+.container {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.modal {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    margin: 5em auto;
+    padding: 3em;
+    background-color: #2d3562;
+    color: #fefefe;
+    text-transform: uppercase;
+    overflow: hidden;
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.3), -3px -3px 10px rgba(0,0,0,0.3);
+}
+.modal-img-background {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    height: 100%;
+    width: auto;
+    filter: blur(0px) brightness(40%);
+}
+.modal-img-background-wrapper::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: linear-gradient( -60deg, #5C2975, #323E8C , #382F75);
+}
+
+.modal-nav {
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.modal-nav button {
+    position: relative;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    background-color: transparent;
+    color: #dddddd;
+    line-height: inherit;
+    height: 100%;
+    padding: 0;
+    margin-right: 1em;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: all 0.1s ease;
+}
+.modal-nav button:hover{
+    cursor: pointer;
+    color: #fefefe;
+}
+.modal-nav button.active {
+    color: #ffffff;
+}
+.modal-nav button.active::after{
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background-color: #2864eb;
+}
+
+form {
+    position: relative;
+    text-align: left;
+    margin-top: 5em;
+}
+
+form > * {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: 1.5em 0;
+}
+
+form label {
+    color: #aaa;
+    padding-left: 15px;
+    font-size: 0.7em;
+    margin-bottom: 0.6em;
+}
+form label + input[type=password],
+form label + input[type=text] {
+    margin-top: 0;
+}
+
+form input[type=text],
+form input[type=password],
+form input[type=submit] {
+    height: 2.8em;
+    border-radius: 1.4em;
+    border: none;
+    font-size: 0.9em;
+    color: #fefefe
+}
+input[type=text]:focus,
+input[type=password]:focus{
+    outline: none;
+    box-shadow: 0 0 2pt 1.5pt #2864eb;
+}
+form input[type=submit]:focus {
+    outline: none;
+    box-shadow: 0 0 5pt rgba(0,0,0,0.5);
+}
+
+form input[type=text],
+form input[type=password] {
+    padding: 0 15px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+form input[type=submit] {
+    background-color: #2864eb;
+    text-transform: uppercase;
+}
+form input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #2260e7;
+}
+input[type=checkbox] {
+    visibility: hidden;
+}
+form .checkbox-label label {
+    color: #fefefe;
+    text-transform: none;
+    padding-left: 5px;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    position: relative;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.checkbox-label label::before {
+    content: '';
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    top: 0;
+    right: 100%;
+    background: #eee;
+    border-radius: 3px;
+    border: 1px solid #eee;
+}
+.checkbox-label label::after {
+    opacity: 0.2;
+    content: '\2714';
+    display: inline-block;
+    position: absolute;
+    background: transparent;
+    vertical-align: middle;
+    top: 1.2pt;
+    right: 100.7%;
+}
+.checkbox-label label:hover::after{
+    opacity: 0.5;
+}
+.checkbox-label input[type=checkbox]:checked + label::after{
+    opacity: 1;
+}
+.checkbox-label input[type=checkbox]:checked + label::before{
+    background-color: #2864eb;
+    border-color: #2864eb;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255,255,255,0.1);
+    margin: 4em 0 2em 0;
+}
+.modal a{
+    position: relative;
+    font-size: 0.9em;
+    text-transform: none;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+}
