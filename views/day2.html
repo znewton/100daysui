@@ -9,7 +9,7 @@
                 Lounge Chair
             </div>
             <div class="modal-graphic-price">
-                $<span class="unit-price"></span>
+                $<span id="unit-price"></span>
             </div>
         </div>
         <div class="modal-content">
@@ -22,18 +22,24 @@
                 In stock. <a href="#">Buy Extended Warranty</a>
             </div>
             <div class="modal-item-rating">
-
+                <span class="star full"></span>
+                <span class="star full"></span>
+                <span class="star full"></span>
+                <span class="star full"></span>
+                <span class="star"></span>
+                <span class="rating-indicator">(4.67-172 reviews)</span>
             </div>
             <div class="modal-item-quantity">
                 <span class="quantity-label">Quantity</span>
-                <button class="chevron-left"><</button>
+                <button id="decrease-quantity" class="chevron-left"><</button>
                 <span id="quantity"></span>
-                <button class="chevron-right">></button>
+                <button id="increase-quantity" class="chevron-right">></button>
             </div>
         </div>
         <div class="modal-footer">
             <div class="modal-footer-left">
-                $<span id="total-price"></span>
+                <div class="price-label">Total Price</div>
+                <div class="total-price">$<span id="total-price"></span></div>
             </div>
             <div class="modal-footer-right">
                 <button id="add-to-cart" onclick="test()">Add to Cart</button>
