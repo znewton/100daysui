@@ -1,0 +1,17 @@
+/**/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300|Righteous');
+
+.container {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	/*background-color: #a77fd5;*/
+}
+
+#keypad button > span {
+	display: block;
+}

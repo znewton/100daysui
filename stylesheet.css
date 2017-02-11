@@ -7,10 +7,12 @@ body{
 
 button {
     border: none;
+	position: relative;
     line-height: inherit;
     background-color: transparent;
     height: 100%;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
     display: inline-block;
     box-sizing: border-box;
     transition: all 0.1s ease;
@@ -66,7 +68,7 @@ nav button {
     background-color: #444444;
     color: #bbbbbb;
     line-height: inherit;
-    height: 100%;
+    height: inherit;
     padding-left:0.5em;
     padding-right:0.5em;
     display: inline-block;

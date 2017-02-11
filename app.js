@@ -1,4 +1,4 @@
-var daysCompleted = 2;
+var daysCompleted = 3;
 var currentDay = 0;
 
 document.addEventListener('DOMContentLoaded', function (e) {
