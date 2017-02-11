@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300|Righteous');
 
 .container {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -34,23 +34,58 @@
     vertical-align: top;
 }
 
+.modal-escape {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	background-color: transparent;
+	height: 4em;
+	width: 4em;
+	overflow: hidden;
+}
+.modal-escape::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: -50%;
+	top: -50%;
+	transform: rotate(45deg);
+	background-color: #c4c550;
+}
+.modal-escape::after{
+	content: '\2190';
+	font-size: 1.5em;
+	font-weight: 400;
+	left: 0.1em;
+	color: #fff;
+	position: absolute;
+	transform: scaleX(0.65);
+}
+.modal-escape:hover {
+	cursor: pointer;
+}
+
 .modal-graphic-header {
-    font-weight: 900;
-    font-size: 4em;
+	font-family: 'Righteous', sans-serif;
+    font-weight: 700;
+    font-size: 5.7em;
     text-transform: uppercase;
     margin-bottom: -12px;
-    color: #020314;
+	margin-top: -15px;
+	vertical-align: top;
+    color: #242e3a;
     text-align: justify;
 }
 .modal-graphic-subheader {
     font-weight: 400;
-    font-size: 1.75em;
+    font-size: 2.4em;
     text-transform: uppercase;
     text-align: justify;
     color: #888888;
 }
 .modal-graphic-price {
-    font-size: 1.3em;
+    font-size: 1.65em;
 }
 .modal-graphic-image {
     width: 100%;
@@ -78,7 +113,7 @@
 }
 .modal-item-stock-status a {
     text-decoration: none;
-    color: #323E8C;
+    color: #3da0fe;
 }
 .modal-item-rating {
     margin-bottom: 3.5em;
@@ -87,7 +122,12 @@
     color: #888888;
 }
 .quantity-label {
+	font-size: 1.1em;
     text-transform: uppercase;
+}
+#quantity {
+	font-size: 1.7em;
+	color: #bbbbbb;
 }
 
 .modal-footer {
@@ -109,7 +149,7 @@
     text-align: left;
 }
 .total-price {
-    color: #8FEB23;
+    color: #c4c550;
     font-size: 1.8em;
 }
 .modal-footer-right {
@@ -117,8 +157,10 @@
 }
 
 #add-to-cart {
-    color: #8FEB23;
+    color: #c4c550;
     font-size: 1.9em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 
@@ -129,4 +171,13 @@
 }
 .star.full::after {
     color: #EBCE14;
+}
+
+
+.chevron-left, .chevron-right {
+	font-size: 2em;
+	font-weight: 400;
+	color: #bbbbbb;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
 }

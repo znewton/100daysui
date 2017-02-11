@@ -138,17 +138,19 @@ nav select {
 }
 
 .chevron::after {
+    content: '>';
     transform-origin: center;
-    transform: scaleX(0.75) scaleY(1.2);
     display: inline-block;
 }
 .chevron-left::after {
-    transform: rotate(180deg);
+    transform: rotate(180deg) scaleX(0.75) scaleY(1.2);
+}
+.chevron-right::after {
+    transform: rotate(0deg) scaleX(0.75) scaleY(1.2);
 }
 .chevron-down::after{
     margin-left: 0.5em;
-    transform-origin: center;
-    transform: rotate(90deg);
+    transform: rotate(90deg) scaleX(0.75) scaleY(1.2);
 }
 
 .hidden-overflow {
