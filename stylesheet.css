@@ -11,6 +11,8 @@ button {
     line-height: inherit;
     background-color: transparent;
     height: 100%;
+	font-size: inherit;
+	font-family: inherit;
     padding-left: 0;
     padding-right: 0;
     display: inline-block;

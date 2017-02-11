@@ -12,6 +12,53 @@
 	/*background-color: #a77fd5;*/
 }
 
+.modal {
+	position: relative;
+	display: inline-block;
+	width: 900px;
+	height: 700px;
+	margin: 3em auto;
+	background-color: transparent;
+}
+#contact-list, #keypad {
+	position: relative;
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+}
+#contact-list {
+	height: 93%;
+	background: rgba(0,0,0,0.4);
+	margin: 3% -1em 0 0;
+	box-shadow: 5px 5px 25px rgba(0,0,0,0.1), -3px -3px 10px rgba(0,0,0,0.1);
+}
+#keypad {
+	background-color: #fff;
+	height: 100%;
+	box-shadow: 5px 5px 25px rgba(0,0,0,0.3), -3px -3px 10px rgba(0,0,0,0.3);
+}
+
 #keypad button > span {
 	display: block;
+}
+
+.contact {
+	margin: 0.5em;
+	background-color: #fff;
+	text-align: left;
+}
+.contact-image {
+	width: 4em;
+	height: 4em;
+	overflow: hidden;
+	display: inline-block;
+}
+.contact-image img{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+}
+.contact-info {
+	display: inline-block;
+	vertical-align: 60%;
 }
