@@ -1,0 +1,43 @@
+<div class="container">
+	<img class="backgroundImg" src="img/buildings.jpeg" title="buildings" />
+	<div class="backgroundTxt">VISA</div>
+	<div class="modal">
+		<div class="modal-header">
+			<div class="header-left">
+				<div>Payment</div><div>Details</div>
+			</div>
+			<div class="header-right">
+				Visa
+			</div>
+		</div>
+		<div class="modal-content">
+			<form method="post">
+				<div class="form-row 2-col">
+					<div class="form-element">
+						<label for="cardholder-name">Cardholder's Name</label>
+						<input type="text" id="cardholder-name" value="Johny Relative" name="cardholderName" placeholder="First Last"/>
+					</div>
+					<div class="form-element">
+						<label for="card-number">Card Number</label>
+						<input type="text" id="card-number" value="4478632299238990" name="cardNumber" placeholder="1234567890123456"/>
+					</div>
+				</div>
+				<div class="form-row 3-col">
+					<div>
+						<label for="expire-month">Expire Date</label>
+						<select id="expire-month" name="expireMonth">
+							<option value="" style="color: #aaaaaa"></option>
+						</select>
+					</div>
+					<div>
+						<select id="expire-year" name="expireMonth" title="Expiration Year">
+							<option value="" style="color: #aaaaaa"></option>
+						</select>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<button id="complete-order">Complete Order <span class="arrow arrow-right"></span></button>
+	<script id="daily-script"></script>
+</div>

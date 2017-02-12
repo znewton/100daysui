@@ -11,7 +11,6 @@ button {
 	position: relative;
     line-height: inherit;
     background-color: transparent;
-    height: 100%;
 	font-size: inherit;
 	font-family: inherit;
     padding-left: 0;
@@ -71,7 +70,8 @@ nav button {
     background-color: #444444;
     color: #bbbbbb;
     line-height: inherit;
-    height: inherit;
+    /*height: inherit;*/
+	height: 100%;
     padding-left:0.5em;
     padding-right:0.5em;
     display: inline-block;
