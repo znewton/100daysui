@@ -69,9 +69,16 @@ function changeView(val) {
     document.getElementById('current-style').setAttribute('href', 'styles/day'+currentDay+'.css');
     if(currentDay == 0) {
         document.getElementById('reference-image-btn').setAttribute('disabled','disabled');
+        document.getElementById('dec-view').setAttribute('disabled','disabled');
     } else {
         document.getElementById('reference-image-btn').removeAttribute('disabled');
+        document.getElementById('dec-view').removeAttribute('disabled');
         document.getElementById('reference-image').setAttribute('src', 'refs/day'+currentDay+'.jpg');
+    }
+    if (currentDay == daysCompleted) {
+        document.getElementById('inc-view').setAttribute('disabled','disabled');
+    } else {
+        document.getElementById('inc-view').removeAttribute('disabled');
     }
     document.getElementById('view-select').value = currentDay;
 }

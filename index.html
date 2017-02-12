@@ -16,9 +16,9 @@
         <button id="reference-image-btn" onclick="refImgDisp(event,true)">Reference Image <span class="chevron chevron-down"></span></button>
     </div>
     <div class="navbar-right">
-        <button onclick="incdecView(-1)"><</button>
+        <button id="dec-view" onclick="incdecView(-1)"><</button>
         <span>Day: <select id="view-select" title="Select Day" onchange="setView(parseInt(this.value))"></select></span>
-        <button onclick="incdecView(1)">></button>
+        <button id="inc-view" onclick="incdecView(1)">></button>
     </div>
 </nav>
 <div id="reference-image-wrapper" onclick="refImgDisp(event,false)">

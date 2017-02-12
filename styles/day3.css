@@ -1,5 +1,5 @@
 /**/
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,300|Righteous');
+@import url('https://fonts.googleapis.com/css?family=Roboto:600,400,300');
 
 .container {
 	font-family: 'Roboto', sans-serif;
@@ -61,7 +61,7 @@
 }
 .contact-name {
 	font-size: 0.9em;
-	font-weight: 400;
+	font-weight: 600;
 }
 .contact-number {
 	font-size: 0.75em;
@@ -73,31 +73,57 @@
 }
 
 #keypad {
+	padding: 0;
 	background-color: #fff;
 	height: 100%;
 	box-shadow: 5px 5px 25px rgba(0,0,0,0.3), -3px -3px 10px rgba(0,0,0,0.3);
 }
-
+#keypad .row button {
+	width: 30%;
+	transition: all 0.1s ease;
+}
+#keypad .row button:hover {
+	background-color: #dddddd;
+}
 #keypad button > span {
 	display: block;
 }
 
 .row {
 	line-height: 1.5em;
+	height: 2.3em;
 	font-size: 2em;
 	display: block;
 }
-
+.keypad-number {
+	color: #333;
+}
 .keypad-alpha {
-	font-size: 0.5em;
-	color: #888888;
-	line-height: 1em;
+	text-transform: uppercase;
+	font-size: 0.4em;
+	color: #aaaaaa;
+	line-height: 0.5em;
 }
 
 #call {
 	color: #62d91b;
+	font-size: 1.5em;
 }
-
+button#reset, button#add-contact {
+	color: #888888;
+	display: inline-block;
+	font-size: 0.5em;
+	font-weight: 600;
+	line-height: 2em;
+	vertical-align: middle;
+	height: 100%;
+	width: 19% !important;
+	text-align: center;
+	margin: 0 -1em;
+}
 #keypad-display {
+	display: inline-block;
+	font-weight: 600;
 	color: #62d91b;
+	width: 60%;
 }
