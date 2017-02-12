@@ -22,6 +22,7 @@
 	font-family: 'Righteous', sans-serif;
 	position: absolute;
 	top: 0;
+	font-style: italic;
 	vertical-align: middle;
 	pointer-events: none;
 	line-height: 0.7em;
@@ -34,10 +35,137 @@
 .modal {
 	position: relative;
 	display: inline-block;
-	width: 600px;
+	width: 750px;
 	margin: 3em auto;
-	padding: 3em 0 0 3em;
+	margin-bottom: 0;
+	border-radius: 1em;
+	padding: 0;
 	background-color: #fff;
 	overflow: hidden;
 	box-shadow: 5px 5px 25px rgba(0,0,0,0.3), -3px -3px 10px rgba(0,0,0,0.3);
+}
+.modal > *{
+	padding: 1em;
+}
+
+.modal-header {
+	color: #fefefe;
+	text-transform: uppercase;
+	background-color: #018ffd;
+	font-weight: 600;
+	padding: 1.6em 1.3em;
+}
+.modal-header > * {
+	width: 49%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.modal-header .header-left {
+	font-family: sans-serif;
+	text-align: left;
+}
+.modal-header .header-right {
+	font-family: 'Righteous', sans-serif;
+	font-style: italic;
+	font-size: 1.85em;
+	text-align: right;
+}
+.modal-content form {
+	font-size: 1.5em;
+}
+.form-row {
+	text-align: left;
+	margin-bottom: 1em;
+}
+.form-row .form-element{
+	display: inline-block;
+	text-align: left;
+}
+.form-row.col-2 .form-element{
+	width: 49%;
+}
+.form-row.col-3 .form-element{
+	width: 32%;
+}
+.form-element > * {
+	display: block;
+}
+.form-element label {
+	text-transform: uppercase;
+	font-size: 0.4em;
+	font-weight: 600;
+	color: #888;
+	margin-bottom: 0.5em;
+}
+.form-element input,
+.form-element select {
+	width: 95%;
+	border-radius: 6px;
+	line-height: 2.5em;
+	height: 2.5em;
+	border: 1.5pt solid #aaa;
+	font-family: inherit;
+	box-sizing: border-box;
+	padding: 0 1em;
+	font-weight: 600;
+	font-size: 0.7em;
+}
+
+.form-element input:focus,
+.form-element select:focus {
+	outline: none;
+	border: 1.5pt solid #018ffd;
+}
+
+.form-element select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.form-element .select-wrapper {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+}
+.form-element .select-wrapper::after {
+	content: '>';
+	transform-origin: center;
+	position: absolute;
+	right: 0.7em;
+	top: 20%;
+	color: #aaaaaa;
+	display: inline-block;
+	transform: rotate(90deg) scaleX(0.75) scaleY(1.2);
+}
+
+.submit-wrapper {
+	width: 100%;
+	text-align: right;
+	margin-top: 1em;
+}
+
+#complete-order {
+	position: relative;
+	color: #fff;
+	font-weight: 600;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	width: 40%;
+	padding-left: 1.5em;
+	line-height: 3em;
+	height: 3em;
+	text-align: left;
+	border: 1px solid #018ffd;
+	border-bottom-left-radius: 1.5em;
+	border-top-left-radius: 1.5em;
+}
+.arrow-right::after {
+	content: '\2192';
+	display: inline-block;
+	font-size: 2em;
+	font-weight: 600;
+	color: #daaf4c ;
+	transform: scaleX(0.65) scaleY(0.9);
+	position: absolute;
+	top: -0.1em;
 }

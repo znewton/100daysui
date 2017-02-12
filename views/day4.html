@@ -12,7 +12,7 @@
 		</div>
 		<div class="modal-content">
 			<form method="post">
-				<div class="form-row 2-col">
+				<div class="form-row col-2">
 					<div class="form-element">
 						<label for="cardholder-name">Cardholder's Name</label>
 						<input type="text" id="cardholder-name" value="Johny Relative" name="cardholderName" placeholder="First Last"/>
@@ -22,22 +22,32 @@
 						<input type="text" id="card-number" value="4478632299238990" name="cardNumber" placeholder="1234567890123456"/>
 					</div>
 				</div>
-				<div class="form-row 3-col">
-					<div>
+				<div class="form-row col-3">
+					<div class="form-element">
 						<label for="expire-month">Expire Date</label>
-						<select id="expire-month" name="expireMonth">
-							<option value="" style="color: #aaaaaa"></option>
-						</select>
+						<div class="select-wrapper">
+							<select id="expire-month" name="expireMonth">
+								<option value="" style="color: #aaaaaa"></option>
+							</select>
+						</div>
 					</div>
-					<div>
-						<select id="expire-year" name="expireMonth" title="Expiration Year">
-							<option value="" style="color: #aaaaaa"></option>
-						</select>
+					<div class="form-element">
+						<div class="select-wrapper">
+							<select id="expire-year" name="expireMonth" title="Expiration Year">
+								<option value="" style="color: #aaaaaa"></option>
+							</select>
+						</div>
+					</div>
+					<div class="form-element">
+						<label for="card-number">Card Number</label>
+						<input type="text" id="cvv" value="634" name="cvv" placeholder="123"/>
 					</div>
 				</div>
 			</form>
 		</div>
 	</div>
-	<button id="complete-order">Complete Order <span class="arrow arrow-right"></span></button>
+	<div class="submit-wrapper">
+		<button id="complete-order">Complete Order <span class="arrow-right"></span></button>
+	</div>
 	<script id="daily-script"></script>
 </div>
